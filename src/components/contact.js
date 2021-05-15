@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import logo from '../img/ssn1.png'
 import logo1 from '../img/ieeel.png'
 import logo2 from '../img/logo.png'
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import {Link} from 'react-router-dom'
 export class contact extends Component {
     render() {
         return (
@@ -16,7 +14,7 @@ export class contact extends Component {
                          <img src={logo1} alt="logo" id="ieee-img"  width="100px"/>
                        </div>
                        <div className="col-lg-3 col-md-4 col-sm-4 col-6 event-div" >
-                         <p>Hack and Tackle 2.0</p>
+                         <p>Hack and Tackle 3.0</p>
                          <img src={logo2} alt="logo" id="hack"  width="90px"/>
                        </div>
                    </div>
@@ -28,10 +26,12 @@ export class contact extends Component {
                          Tamil Nadu, India<br></br>
                        </div>
                        <div className="col-lg-3 col-md-4 col-sm-4 col-6 number-div" >
-                       Dr. T. Sree Sharmila<br></br>
-                       +91 - 9940582630<br></br>
-                        Ms. J. K. Josephine Julina<br></br>
-                        +91 - 9962580503<br></br>
+                       <p>Dr. T. Sree Sharmila<br></br>
+                       +91 - 9940582630</p>
+                       <p>Dr. V. Thanikachalam<br></br>
+                       +91-9962453600</p>
+                        <p>Ms. J. K. Josephine Julina<br></br>
+                        +91 - 9962580503</p>
                        </div>
                        <div className="col-lg-3 col-md-3 col-sm-3 col-6 icon-div" >
                         <a href="https://www.instagram.com/ieee_ssn/" id="insta"><AiIcons.AiOutlineInstagram /></a>

@@ -1,17 +1,17 @@
 import React,{ Component} from 'react'
-import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
-import logo2 from '../img/ieeesp.png'
+
 const style={
-    color:"white",
-    backgroundColor:"rgb(3, 3, 3,0.8)",
+    color:"rgb(50,50,50)",
+    backgroundColor:"#eeeeee",
     width:"120px",
     height:"30px",
     borderRadius:"5px",
     display:"inline-block",
     textDecoration:"none",
     textAlign:"center",
-    padding:"2px"
+    padding:"8px",
+    fontWeight:"normal"
 
 }
 
@@ -23,27 +23,29 @@ handleHover=(event)=>{
     }
   render(){
     return (
-        <div className="intro-class"  >
+        <div className="intro-class hero"  >
           <div data-aos="fade-down" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
           <div className="intro-text" >        
-            <p>SSN College of Engineering</p>
-            <p id="dpt">Information Technology</p>
+            <p className="overlay" id="clg">SRI SIVASUBRAMANIYA NADAR COLLEGE OF ENGINEERING</p>
+            <p id="dpt" className="overlay">DEPARTMENT OF INFORMATION TECHNOLOGY</p>
            </div>
-          <p   >presents</p>
+          <p   className="present">presents</p>
           </div>
           <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
           <div className="intro-logo-div">
-           <img src={logo2} alt="logo" id="event-img" width="170px"/>
-           <img src={logo} alt="logo" id="event-logo" width="170px"/>    
+        <img src={logo} alt="logo" id="event-logo" width="320px"/>    
            </div> 
            <div className="info-class">
-              <p>💻 24 Hour Hackthon</p>
-              <p>📅 20 - 21 FEBRUARY 2020</p>
-              <p>🕒 3 PM - 3 PM</p>
+              <p className="overlay" style={{fontSize:"16px"}}>💻 24 Hour Hackthon</p>
+              <p className="overlay" style={{fontSize:"16px"}}>📅 15 - 16 MARCH 2021</p>
+              <p className="overlay" style={{fontSize:"16px"}}>🕗 8 AM - 8 PM</p>
            </div> 
-           <Link style={style} to="/register">Register</Link>
+           <a className="overlay" style={style} href="https://forms.gle/jFaZj7jPubiPWkQcA">Register</a>
            </div>
         </div>
+     
+
+      
     )
   }
 }

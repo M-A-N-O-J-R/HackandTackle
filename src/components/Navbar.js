@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
@@ -18,15 +17,19 @@ const style=
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
-
   const showSidebar = () => setSidebar(!sidebar);
+ const handleHover=(event)=>{
+    console.log(event);
+
+    event.target.classList.toggle("hover1");
+}
 
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
-            <i class="fas fa-bars fa-1x" onClick={showSidebar}></i>
+            <i className="fas fa-bars fa-1x" onClick={showSidebar}></i>
           </Link>
         <div className="logo">
             <a href="https://www.ssn.edu.in/"><img   src="https://ssnhackandtackle.com/img/ssn1.png" alt="ssn-logo" id="ssn-logo" width="60px"/></a>
@@ -34,8 +37,8 @@ function Navbar() {
             <a href="https://www.ieee.org/"><img  src="https://ssnhackandtackle.com/img/ieeel.png" alt="ieee-logo" id="ieee-logo" width="65px"/></a>
         </div>
         <ul className="ul-list">
-            <li><Link to="/" style={style}  >Home</Link></li>
-            <li><a href="/#about" style={style}>About</a></li>
+            <li><Link to="/" style={style} >Home</Link></li>
+            <li><a href="/#about" style={style} >About</a></li>
             <li><a href="/#track" style={style}>Tracks</a></li>
             <li><a href="/#timeline" style={style}>Timeline</a></li>
             <li><a href="/prize" style={style}>Prizes & Results</a></li>

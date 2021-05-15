@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+
 const style={
     color:"white",
     backgroundColor:"rgb(3, 3, 3,0.8)",
@@ -20,13 +20,11 @@ export class register extends Component {
                 <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
                 <div className="intro-text" >        
                     <p>REGISTER</p>
-                    <p  className="text-regi">Clock is ticking. Register soon for Phase - II.</p>
+                    <p  className="text-regi">Clock is ticking. Register soon </p>
                 
                 </div>
-                <Link style={style} to="/register">Register</Link>
-                 <br></br>
-                 <br></br>
-                 <p className="text-regi">Wildcard Registrations open</p>
+                <a style={style} href="https://forms.gle/jFaZj7jPubiPWkQcA">Register</a>
+                 
               </div>
             </div>
             </div>

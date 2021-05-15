@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom';
 import Home from './components/home';
-import Navbar2 from './components/navbar2'
 import Agri from './components/agri'
 import Safety from './components/safety'
 import Environment from './components/environment'
@@ -14,6 +13,10 @@ import Register from './components/registration'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/contact'
 import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
 
 function App() {
   return (

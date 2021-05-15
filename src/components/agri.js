@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import aos from 'aos'
-import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
 import logo1 from '../img/Agriculture.png'
 
@@ -20,8 +18,8 @@ export class agri extends Component {
               </div> 
               <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
                    <div className="img-class">
-                       <img src={logo} alt="logo" id="event-logo" width="180px"/>
-                       <img src={logo1} alt="logo" id="event-logo" width="170px"/>
+                       <img src={logo} alt="logo" id="event-logo" width="200px"/>
+                       <img src={logo1} alt="logo" className="track-logo" width="170px" />
                    </div>
                    <div className=" title-des">
                      <p>💻 Hack and Tackle 2.0</p>
@@ -45,7 +43,7 @@ export class agri extends Component {
                                  <li>Inefficient training to farmers</li>
                                  <li>Mismatch of demand and supply</li>
                                  <li>Strategies used in transportation</li>
-                                
+                                 <li><li>Strategies used in transportation</li></li>
                              </ul>
                              <div className="agri-body">
                              Can your idea maximize returns and lower risks in agriculture, or perhaps find a better balance between production and consumption?

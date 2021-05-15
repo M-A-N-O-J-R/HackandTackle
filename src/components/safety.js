@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import aos from 'aos'
-import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
 import logo1 from '../img/women-safety.png'
 export class agri extends Component {
@@ -18,12 +16,12 @@ export class agri extends Component {
               </div> 
               <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
                    <div className="img-class">
-                       <img src={logo} alt="logo" id="event-logo" width="180px"/>
-                       <img src={logo1} alt="logo" id="event-logo" width="170px"/>
+                     <img src={logo} alt="logo" id="event-logo" width="200px"/>
+                       <img src={logo1} alt="logo" className="track-logo" width="170px" />
                    </div>
                    <div className=" title-des">
                      <p>💻 Hack and Tackle 2.0</p>
-                     <p>Women Safety</p>
+                     <p>👧Women Safety</p>
                    </div> 
               </div> 
               </div>
@@ -42,7 +40,7 @@ export class agri extends Component {
                                  <li>Family problems</li>
                                  <li>Assault on a woman</li>
                                  <li>Trafficking</li>
-                                
+                                 <li>Safe social media for women</li>
                              </ul>
                              <div className="agri-body">Can your idea supports safe guarding women and offers a helping hand in resolving harassment issues and help in achieving a sustainable society?</div>
                          </div>

@@ -5,11 +5,13 @@ import 'aos/dist/aos.css';
 import Department from './department'
 import Information from './information'
 import Tracks from './tracks'
-import Gallery from './gallery'
 import Timeline from './timeline'
 import Register from './register'
 import Collabrate from './collabrate'
 import Faq from './faq'
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SliderData';
+import Img from './img'
 AOS.init();
 
 // You can also pass an optional settings object
@@ -40,12 +42,14 @@ function home() {
     return (
         <div >
             <Intro/>
+
             <Department/>
             <Information/>
-            {/* <Gallery/> */}
+    
             <Timeline/>
             <Tracks/>
             <Collabrate/>
+            <Img/>
             <Faq/>
             <Register/>
             

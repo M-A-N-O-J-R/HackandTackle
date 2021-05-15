@@ -61,7 +61,7 @@ export class tracks extends Component {
                      </div>
                     
                   </div>
-                 
+                  <p style={{color:"red",}}>NOTE: If your solution doesn't fit in the above track, fear not. You can apply with the open track expressing any suitable idea or concept that solves a real - world problem.</p>
                 </div>
             </div>
         </div>  
